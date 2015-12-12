@@ -23,8 +23,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
+  ionic.Platform.setPlatform('ios');
   $stateProvider
-
   .state('app', {
     url: '/app',
     abstract: true,
@@ -42,67 +42,67 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
   })
-  .state('app.header.stable',{
-    url: '/stable',
+  .state('app.header.color',{
+    url: '/color',
     views: {
-      'stable' : {
-        templateUrl: 'templates/01_header/01_stable.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color.html'
       }
     }
   })
   .state('app.header.positive',{
     url: '/positive',
     views: {
-      'positive' : {
-        templateUrl: 'templates/01_header/02_positive.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color/02_positive.html'
       }
     }
   })
   .state('app.header.calm',{
     url: '/calm',
     views: {
-      'calm' : {
-        templateUrl: 'templates/01_header/03_calm.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color/03_calm.html'
       }
     }
   })
   .state('app.header.balanced',{
     url: '/balanced',
     views: {
-      'balanced' : {
-        templateUrl: 'templates/01_header/04_balanced.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color/04_balanced.html'
       }
     }
   })
   .state('app.header.energized',{
     url: '/energized',
     views: {
-      'energized' : {
-        templateUrl: 'templates/01_header/05_energized.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color/05_energized.html'
       }
     }
   })
   .state('app.header.assertive',{
     url: '/assertive',
     views: {
-      'assertive' : {
-        templateUrl: 'templates/01_header/06_assertive.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color/06_assertive.html'
       }
     }
   })
   .state('app.header.royal',{
     url: '/royal',
     views: {
-      'royal' : {
-        templateUrl: 'templates/01_header/07_royal.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color/07_royal.html'
       }
     }
   })
   .state('app.header.dark',{
     url: '/dark',
     views: {
-      'dark' : {
-        templateUrl: 'templates/01_header/08_dark.html'
+      'color' : {
+        templateUrl: 'templates/01_header/01_color/08_dark.html'
       }
     }
   })
