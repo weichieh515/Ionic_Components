@@ -1,0 +1,22 @@
+<ion-view view-title="Header">
+  <!-- 若要修改 header bar 把menu.html裡的 <ion-nav-bar> 整個複製下來貼在 <ion-view> & <ion-content> 的中間-->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <!-- 若要增加 header button 可以複製menu.html裡的 <ion-nav-buttons> 屬性 side="left" or "right" 左或右--> 
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear button-positive ion-navicon" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+      <!-- 增加 header button 結束 --> 
+    </ion-nav-bar>
+  <!-- 修改 header bar 結束 --> 
+  <ion-content on-swipe-right="goLeft()" on-swipe-left="goRight()">
+    <h1>Header Button (Clear) </h1> 
+    <h4>建議Button 的 class 加 button-clear 較好看</h4>
+  </ion-content>
+</ion-view>

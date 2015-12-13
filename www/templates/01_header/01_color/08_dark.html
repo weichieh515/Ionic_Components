@@ -1,0 +1,15 @@
+<ion-view view-title="Header">
+  <!-- 若要修改 header bar 把menu.html裡的 <ion-nav-bar> 整個複製下來貼在 <ion-view> & <ion-content> 的中間--> 
+    <ion-nav-bar class="bar-dark">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+  <!-- 修改 header bar 結束 --> 
+  <ion-content on-swipe-right="goLeft()" on-swipe-left="goRight()">
+     <h1>Dark Header (黑色)</h1>
+  </ion-content>
+</ion-view>

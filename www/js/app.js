@@ -106,6 +106,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.header.button',{
+    url: '/button',
+    views: {
+      'button' : {
+        templateUrl: 'templates/01_header/02_button.html'
+      }
+    }
+  })
 
   .state('app.search', {
     url: '/search',
