@@ -1,7 +1,7 @@
 <ion-side-menus enable-menu-with-back-views="false">
-  <!-- edge-drag-threshold=25 or true or flase drag-content="true" or "false" -->
-  <ion-side-menu-content edge-drag-threshold=15 drag-content="true">
-    <ion-nav-bar class="bar-stable">
+  <!-- edge-drag-threshold=25(max) or true or flase drag-content="true" or "false" -->
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-light">
       <ion-nav-back-button>
       </ion-nav-back-button>
       <ion-nav-buttons side="left">
@@ -18,8 +18,11 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close href="#/app/header/color">
+        <ion-item menu-close href="#/app/header">
           Header
+        </ion-item>
+        <ion-item menu-close href="#/app/input">
+          Input
         </ion-item>
         <ion-item menu-close ng-click="login()">
           Login
@@ -37,7 +40,7 @@
     </ion-content>
   </ion-side-menu>
   
-   <ion-side-menu side="right" width="180">
+   <ion-side-menu side="right" width="180" is-enabled="rightMenu">
     <ion-header-bar class="bar-stable">
       <h1 class="title">Right</h1>
     </ion-header-bar>

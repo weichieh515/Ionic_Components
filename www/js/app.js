@@ -23,7 +23,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-  ionic.Platform.setPlatform('ios');
   $stateProvider
   .state('app', {
     url: '/app',
@@ -34,87 +33,21 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   
   .state('app.header', {
     url: '/header',
-    abstract: true,
     views: {
         'menuContent': {
           templateUrl: 'templates/01_header.html',
-          controller: 'TabsCtrl'
         }
       }
   })
-  .state('app.header.color',{
-    url: '/color',
+  
+  .state('app.input', {
+    url: '/input',
     views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color.html'
+        'menuContent': {
+          templateUrl: 'templates/02_input.html',
+        }
       }
-    }
   })
-  .state('app.header.positive',{
-    url: '/positive',
-    views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color/02_positive.html'
-      }
-    }
-  })
-  .state('app.header.calm',{
-    url: '/calm',
-    views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color/03_calm.html'
-      }
-    }
-  })
-  .state('app.header.balanced',{
-    url: '/balanced',
-    views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color/04_balanced.html'
-      }
-    }
-  })
-  .state('app.header.energized',{
-    url: '/energized',
-    views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color/05_energized.html'
-      }
-    }
-  })
-  .state('app.header.assertive',{
-    url: '/assertive',
-    views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color/06_assertive.html'
-      }
-    }
-  })
-  .state('app.header.royal',{
-    url: '/royal',
-    views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color/07_royal.html'
-      }
-    }
-  })
-  .state('app.header.dark',{
-    url: '/dark',
-    views: {
-      'color' : {
-        templateUrl: 'templates/01_header/01_color/08_dark.html'
-      }
-    }
-  })
-  .state('app.header.button',{
-    url: '/button',
-    views: {
-      'button' : {
-        templateUrl: 'templates/01_header/02_button.html'
-      }
-    }
-  })
-
   .state('app.search', {
     url: '/search',
     views: {
