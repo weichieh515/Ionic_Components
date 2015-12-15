@@ -39,15 +39,58 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
   })
-  
+  //=======================================================  START input
   .state('app.input', {
     url: '/input',
+    abstract: true,
     views: {
         'menuContent': {
           templateUrl: 'templates/02_input.html',
+          controller: 'inputCtrl'
         }
       }
   })
+  .state('app.input.form',{
+    url: '/form',
+    views: {
+      'form' : {
+        templateUrl: 'templates/02_input/01_form.html'
+      }
+    }
+  })
+  .state('app.input.checkbox',{
+    url: '/checkbox',
+    views: {
+      'checkbox' : {
+        templateUrl: 'templates/02_input/02_checkbox.html'
+      }
+    }
+  })
+  .state('app.input.toggle',{
+    url: '/toggle',
+    views: {
+      'toggle' : {
+        templateUrl: 'templates/02_input/03_toggle.html'
+      }
+    }
+  })
+  .state('app.input.radio',{
+    url: '/radio',
+    views: {
+      'radio' : {
+        templateUrl: 'templates/02_input/04_radio.html'
+      }
+    }
+  })
+  .state('app.input.select',{
+    url: '/select',
+    views: {
+      'select' : {
+        templateUrl: 'templates/02_input/05_select.html'
+      }
+    }
+  })
+  //======================================================= END input
   .state('app.search', {
     url: '/search',
     views: {

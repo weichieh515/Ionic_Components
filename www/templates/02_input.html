@@ -1,34 +1,20 @@
 <ion-view view-title="Inputs">
-  <ion-content>
-      <div class="bar bar-header item-input-inset">
-          <label class="item-input-wrapper">
-            <i class="icon ion-ios-search placeholder-icon"></i>
-            <input type="search" placeholder="Search">
-          </label>
-          <button class="button button-clear">
-            Cancel
-          </button>
-        </div>
-        
-          <form ng-submit="doLogin()">
-             <div class="list">
-              <label class="item item-input item-floating-label">
-                <span class="input-label">First Name</span>
-                <input type="text" placeholder="First Name">
-              </label>
-              <label class="item item-input item-floating-label">
-                <span class="input-label">Last Name</span>
-                <input type="text" placeholder="Last Name">
-              </label>
-              <label class="item item-input item-floating-label">
-                <span class="input-label">Email</span>
-                <input type="text" placeholder="Email">
-              </label>
-              </div>
-              <div class="padding">
-                      <button class="button button-block button-positive" type="submit">Log in</button>
-              </div>
-          
-            </form>  
-  </ion-content>
+  <ion-tabs class="tabs-striped tabs-color-positive">
+        <ion-tab title="Form" icon-on="ion-document-text" icon-off="ion-document" href="#/app/input/form">
+          <ion-nav-view name="form"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Checkbox" icon-on="ion-ios-checkmark" icon-off="ion-ios-checkmark-outline" href="#/app/input/checkbox">
+          <ion-nav-view name="checkbox"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Toggle" icon-on="ion-toggle-filled" icon-off="ion-toggle" href="#/app/input/toggle">
+          <ion-nav-view name="toggle"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Radio" icon-on="ion-ios-circle-filled" icon-off="ion-ios-circle-outline" href="#/app/input/radio">
+          <ion-nav-view name="radio"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Select" icon-on="ion-android-arrow-dropdown-circle" icon-off="ion-android-arrow-dropdown" href="#/app/input/select">
+          <ion-nav-view name="select"></ion-nav-view>
+        </ion-tab>
+      </ion-tabs>
 </ion-view>
+  

@@ -41,6 +41,42 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('inputCtrl', function($scope) {
+   $scope.devList = [
+    { text: "HTML5", checked: true },
+    { text: "CSS3", checked: false },
+    { text: "JavaScript", checked: false }
+  ];
+
+  $scope.pushNotificationChange = function() {
+    console.log('Push Notification Change', $scope.pushNotification.checked);
+  };
+  
+  $scope.pushNotification = { checked: true };
+  $scope.emailNotification = 'Subscribed';
+  
+  $scope.clientSideList = [
+    { text: "Backbone", value: "bb" },
+    { text: "Angular", value: "ng" },
+    { text: "Ember", value: "em" },
+    { text: "Knockout", value: "ko" }
+  ];
+
+  $scope.serverSideList = [
+    { text: "Go", value: "go" },
+    { text: "Python", value: "py" },
+    { text: "Ruby", value: "rb" },
+    { text: "Java", value: "jv" }
+  ];
+  
+  $scope.data = {
+    clientSide: 'ng'
+  };
+  
+})
+
+
+
 .controller('TabsCtrl', function($scope, $ionicTabsDelegate) {
 
   $scope.goRight = function () {
