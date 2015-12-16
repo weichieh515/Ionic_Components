@@ -1,0 +1,28 @@
+<ion-view view-title="Select">
+  <ion-content drag-content="false">
+     <div class="list">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Lightsaber
+        </div>
+        <select>
+          <option>Blue</option>
+          <option selected>Green</option>
+          <option>Red</option>
+        </select>
+      </label>
+
+      <div class="item range">
+        <i class="icon ion-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon ion-volume-high"></i>
+      </div>
+      
+      <div class="item range range-positive">
+        <i class="icon ion-ios-sunny-outline"></i>
+        <input type="range" name="volume" min="0" max="100" value="40" step="20">
+        <i class="icon ion-ios-sunny"></i>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

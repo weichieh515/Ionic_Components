@@ -91,6 +91,31 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
   //======================================================= END input
+  .state('app.button', {
+    url: '/button',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/03_button.html'
+      }
+    }
+  })
+  .state('app.list', {
+    url: '/list',
+    abstract: true,
+    views: {
+        'menuContent': {
+          templateUrl: 'templates/04_list.html'
+        }
+      }
+  })
+  .state('app.list.type',{
+    url: '/type',
+    views: {
+      'type' : {
+        templateUrl: 'templates/04_list/01_type.html'
+      }
+    }
+  })
   .state('app.search', {
     url: '/search',
     views: {
