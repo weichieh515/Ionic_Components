@@ -99,6 +99,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  //=======================================================  START List
   .state('app.list', {
     url: '/list',
     abstract: true,
@@ -116,6 +117,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.list.function',{
+    url: '/function',
+    views: {
+      'function' : {
+        templateUrl: 'templates/04_list/02_function.html',
+        controller: 'ListCtrl'
+      }
+    }
+  })
+  //=======================================================  END List
   .state('app.search', {
     url: '/search',
     views: {
